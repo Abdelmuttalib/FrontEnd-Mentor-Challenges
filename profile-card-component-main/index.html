@@ -15,6 +15,28 @@
     body{
       background:hsl(185, 75%, 39%);
       font-family: 'Kumbh Sans', sans-serif;
+      height: 100vh;
+    }
+    #container{
+      position: absolute;
+      height: 100vh;
+    }
+    #sec_back_img{
+      height: 100vh;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    #top_back_effect{
+      object-fit: none;
+      object-position: -330px -515px;
+    }
+    #bottom_back_effect{
+      object-fit: none;
+      object-position: 300px 500px;
+      position: absolute;
+      right: 0;
+      bottom: 0;
     }
 
     .card{
@@ -132,6 +154,9 @@
   </style>
 </head>
 <body>
+  <div id="container">
+  <img id="top_back_effect" src="./images/bg-pattern-top.svg" alt="bg_patterns">
+  <div id="sec_back_img"><img id="bottom_back_effect" src="./images/bg-pattern-bottom.svg" alt="bg_patterns"></div>
 
 
   <div class="card">
@@ -161,5 +186,6 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="https://github.com/AbdelmuttalibAhmed">Abdelmuttalib</a>.
   </div>
+</div>
 </body>
 </html>
